@@ -1,32 +1,83 @@
-.App {
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: url("./img/zoltan-tasi-1367165-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+h1 {
+  margin: calc(10vh - 1rem);
+  text-align: center;
+  font-family: Thasadith, serif;
+  color: whitesmoke;
+}
+h3 {
+  font-size: 0.8rem;
+}
+
+.search-bar {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.search-bar input {
+  height: 2rem;
+  width: 20rem;
+  font-size: 1.2rem;
 }
+.search-bar button {
+  margin: 0 1rem;
+  vertical-align: top;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 2.4rem;
+  width: 7rem;
+}
+main {
+  display: flex;
+  margin-top: 2rem;
+}
+.video-details {
+  float: left;
+  background-color: #f5deb37a;
+  padding: 2rem;
+  height: 100%;
+}
+.playing {
+  width: 100%;
+}
+.video-list {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 70%;
+  background-color: #f1f1f19e;
 }
-
-.App-link {
-  color: #61dafb;
+.video-list p {
+  font-size: 0.7rem;
 }
+.video-list--playing {
+  float: right;
+  max-width: 25%;
+  margin-top: calc(10vh - 1rem);
+  margin-right: calc(15vw - 3rem);
+  margin-left: calc(15vw - 5rem);
+}
+.video-item {
+  margin: 25px auto;
+  padding-top: 20px;
+  width: 70%;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  cursor: pointer;
+}
+.video-item:hover {
+  background-color: #f1f1f124;
+}
+.video-item img {
+  max-width: 100%;
+}
+.video-item--playing img {
+  height: 90px;
+  width: 120px;
+}
+hr {
+  color: black;
+  width: 80%;
 }
